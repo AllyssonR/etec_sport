@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antiliased;
+}
+
+:root {
+  --gray-200: #ececec;
+  --yellow: #ffcc00;
+  --black: #000000;
+  --slate-800: #1e293b;
+  --mint-green: #bbe6e4;
+  --light-gray: #C0C0C0;
+  --verdigris: #68B0AB;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: #000000;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+  /* 10px */
+  color: var(--gray-200);
+}
+
+#logo i {
+  font-size: 2.5rem;
+  /* 40px */
+}
+
+#logo p {
+  font-size: 1.6rem;
+  /* 26px aproximadamente*/
+}
+
+#navegacao nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+  /* 10px */
+}
+
+#navegacao nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  /* 5px */
+  color: var(--gray-200);
+  text-decoration: none;
+  padding-top: 0.3rem;
+  /* 5px */
+  padding-bottom: 0.3rem;
+  /* 5px */
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 1s ease;
+}
+
+#navegacao nav a i {
+  font-size: 1.5rem;
+  /* 25px aproximadamente */
+}
+
+#navegacao nav a p {
+  font-size: 0.62rem;
+  /* 10px */
+}
+
+#navegacao nav a:hover {
+  color: #ffcc00;
+  border-top: 2px solid #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+#redessociais nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* 16 px */
+}
+
+#redessociais nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  /* 4px */
+  text-decoration: none;
+  color: var(--gray-200);
+  padding-top: 0.3rem;
+  /* 5px */
+  padding-bottom: 0.3rem;
+  /* 5px */
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 1s esse;
+}
+
+#redessociais nav a:hover {
+  color: #ffcc00;
+  border-top: 2px solid #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+#redessociais nav a i {
+  font-size: 28px;
+}
+
+#redessociais nav a p {
+  font-size: 0.62rem;
+  /* 10px */
+}
+
+#contato nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+  /* 10px */
+}
+
+#contato nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18rem;
+  /* 3px */
+  color: var(--gray-200);
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+#contato nav a:hover {
+  color: #ffcc00;
+}
+
+#contato nav a i {
+  font-size: 30px;
+}
+
+#contato nav a p {
+  font-size: 0.62rem;
+  /* 10px */
+}
+
+#entrar button {
+  background-color: #000000;
+  height: 2.5rem;
+  /* 40px */
+  width: 6.25rem;
+  /* 100px */
+  border: 2px solid var(--gray-200);
+  border-radius: 0.3rem;
+  /* 5px */
+  color: var(--gray-200);
+  font-size: 1rem;
+  /* 16px */
+  transition: all 1s ease;
+}
+
+#entrar button:hover {
+  background-color: var(--gray-200);
+  border: 2px solid var(--gray-200);
+  border-radius: 0.3rem;
+  /* 5px */
+  color: #000000;
+}
+
+#landing {
+  display: flex;
+  background-color: var(--gray-200);
+  padding: 1rem 0;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  /* 32px*/
+}
+
+#landing p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: var(--slate-800);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#landing img {
+  height: 500px;
+  margin-left: 2rem;
+  border-radius: 8px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+}
+
+#cards h2 {
+  font-size: 2rem
+    /* 32px  */
+  ;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.grupo-cards {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  /* 32px */
+  gap: 1.25rem;
+  /* 20px */
+  background-color: var(--gray-200);
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.grupo-cards:hover {
+  opacity: 1;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--black);
+  background-color: #ffff;
+  border-radius: 4px;
+  width: 18.75rem;
+  /* 300px */
+  height: 37.5rem;
+  /* 600px */
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2rem);
+}
+
+.card img {
+  width: 12.5rem;
+  /* 200px */
+  height: 18.75rem;
+  /* 300px */
+  border-radius: 8px;
+}
+
+.card .card-info {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card .card-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.card .card-button button {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--black);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: var(--gray-200);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.card .card-button button:hover {
+  background-color: var(--black);
+  color: var(--gray-200);
+  border: 1px solid var(--gray-200);
+}
+
+.card img:hover {
+  filter: saturate(2);
+}
+
+.card-content-text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+#futebol{
+  background-color: var(--verdigris);
+}
+
+.card-content-text img {
+  height: 50rem;
+}
+
+.card-content-text div {
+  height: 45rem;
+}
+
+.card-content-text div h2 {
+  font-size: 3rem;
+}
+
+
+/*footer*/
+
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--light-gray);
+  padding: 2rem 1.25rem;
+}
+
+#social-footer {
+  display: flex;
+  padding: 2.5rem 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#social-logo {
+  margin-left: 2rem;
+}
+
+#social-logo i {
+  font-size: 2rem;
+}
+
+#social-logo p {
+  font-size: 0.75rem;
+  color: var(--slate-800);
+}
+
+#sports-footer-logo p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+#sports-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#social-footer-logo a {
+  color: var(--black);
+  font-size: 1rem;
+}
+
+#social-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#contact-us a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: var(--black)
+}
+
+#rights {
+  border-top: 1px solid var(--black);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
