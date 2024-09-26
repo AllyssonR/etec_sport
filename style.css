@@ -14,9 +14,9 @@
   --mint-green: #bbe6e4;
   --light-gray: #C0C0C0;
   --verdigris: #68B0AB;
-  --verde-claro:#4CAF50;
-  --azul-claro:#1976D2;
-  --turguesa:#00ACC1;
+  --verde-claro: #4CAF50;
+  --azul-claro: #1976D2;
+  --turguesa: #00ACC1;
 }
 
 header {
@@ -26,6 +26,9 @@ header {
   justify-content: space-around;
   height: 10vh;
   background-color: #000000;
+}
+button a{
+  text-decoration: none;
 }
 
 #logo {
@@ -314,27 +317,32 @@ header {
 #futebol {
   background-color: var(--verdigris);
 }
-#natacao{
-  background-color: var(--azul-claro);
-}
-#volei{
-  background-color: var(--verde-claro);
-}
-#basquete{
-  background-color: var(--verdigris);
-}
-#atletismo{
+
+#natacao {
   background-color: var(--azul-claro);
 }
 
-.card-content-text{
+#volei {
+  background-color: var(--verde-claro);
+}
+
+#basquete {
+  background-color: var(--verdigris);
+}
+
+#atletismo {
+  background-color: var(--azul-claro);
+}
+
+.card-content-text {
   border-top: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
   padding: 1rem 0;
 }
+
 .card-content-text img {
   height: 65rem;
-  width:40rem;
+  width: 40rem;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -351,31 +359,35 @@ header {
 .card-content-text div h2 {
   font-size: 3rem;
 }
-.card-content-text div p{
+
+.card-content-text div p {
   font-size: 1.4rem;
 }
+
 .card-content-text ol {
   margin-left: 1.5rem;
   width: 35rem;
 }
-.card-content-text span{
-  color:var(--gray-200);
+
+.card-content-text span {
+  color: var(--gray-200);
   text-shadow: 2px 2px 2px var(--black);
   font-weight: bold;
   font-size: 1.2rem;
 }
-.card-content-text div button{
+
+.card-content-text div button {
   padding: 1rem 0;
-  color:var(--gray-200);
+  color: var(--gray-200);
   background-color: transparent;
   border-radius: 8px;
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: bold;
-  transition: all 0.2s ;
+  transition: all 0.2s;
 }
 
-.card-content-text div button:hover{
-  color:var(--slate-800);
+.card-content-text div button:hover {
+  color: var(--slate-800);
   background-color: var(--gray-200);
 }
 
