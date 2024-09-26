@@ -267,6 +267,7 @@ header {
   height: 18.75rem;
   /* 300px */
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .card .card-info {
@@ -335,6 +336,7 @@ header {
   height: 65rem;
   width:40rem;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .card-content-text div {
