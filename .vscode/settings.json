@@ -12,7 +12,7 @@
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.lineHeight": 26,
-  "editor.fontFamily": "Fira Code,JetBrains Mono",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.semanticHighlighting.enabled": false,
 
