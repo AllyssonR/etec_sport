@@ -27,7 +27,8 @@ header {
   height: 10vh;
   background-color: #000000;
 }
-button a{
+
+button a {
   text-decoration: none;
 }
 
@@ -389,6 +390,66 @@ button a{
 .card-content-text div button:hover {
   color: var(--slate-800);
   background-color: var(--gray-200);
+}
+
+/* resumo  tabelas */
+#comparacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color:white;
+  color: var(--black);
+}
+
+#comparacao h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+  text-shadow: 3px 3px 3px var(--light-gray);
+}
+
+#comparacao table {
+  width: 70%;
+  border-collapse: collapse;
+
+}
+
+#comparacao th,
+td {
+  padding: 0.9rem;
+  text-align: left;
+  border: 1px solid var(--black);
+}
+
+#comparacao th {
+  background-color: var(--light-gray);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#comparacao tbody tr {
+  background-color: var(--gray-200);
+  transition: all 0.5 ease;
+}
+
+#comparacao tbody tr:hover {
+  background-color: var(--light-gray);
+}
+
+.nome-modalidade-tabela {
+  text-align: center;
+  font-weight: 800;
+}
+
+.escorco-modadalidade-tabela {
+  text-align: center;
+  font-style: italic;
+}
+
+table {
+  margin-bottom: 2rem;
 }
 
 /*footer*/
